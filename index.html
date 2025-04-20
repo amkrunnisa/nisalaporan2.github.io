@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>LAPORAN TEORI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: 0.3s ease;
+      background-color: #f0f0f0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #2c3e50;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #34495e;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+      background-color: white;
+      padding: 15px;
+      border-left: 6px solid #3498db;
+      border-radius: 6px;
+    }
+
+    h3 {
+      cursor: pointer;
+      color: #2980b9;
+    }
+
+    .btn-toggle {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-toggle:hover {
+      background-color: #1e8449;
+    }
+
+    /* Tampilan berantakan */
+    .messy {
+      background-color: rgb(226, 89, 148);
+      color: yellow;
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    .messy .section {
+      background-color: rgb(197, 131, 169);
+      border-left: 6px dashed red;
+    }
+
+    .messy h1, .messy h2, .messy h3 {
+      color: red;
+    }
+
+    img.screenshot {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="konten">
+    <h1>LAPORAN TEORI</h1>
+    <h2>Amalia Khairunnisa | 202332102</h2>
+
+    <button class="btn-toggle" onclick="toggleMode()">Ganti Tampilan</button>
+
+    <div class="section">
+      <h3 onclick="konfirmasiToggle(this)">Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+      <div>
+        <p>CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan gaya visual (misalnya, warna, font, tata letak) dari halaman web. JavaScript digunakan untuk menambahkan interaksi, fungsi dan dinamika ke halaman web. CSS dan JavaScript bekerja sama untuk membuat pengalaman pengguna yang lebih menarik dan interaktif di web.</p>
+        <p><strong>CSS (Cascading Style Sheets)</strong><br>
+          <strong>Fungsi Utama:</strong> Mengatur tampilan dan desain halaman web.
+          <ul>
+            <li>Memisahkan konten dari desain: HTML untuk struktur/konten, CSS untuk tampilan.</li>
+            <li>Mengatur tampilan secara konsisten dari satu file CSS.</li>
+          </ul>
+        </p>
+        <p><strong>JavaScript</strong><br>
+          <strong>Fungsi Utama:</strong> Menambahkan interaktivitas dan logika dinamis pada halaman web.
+          <ul>
+            <li>Membuat halaman interaktif: tombol, dropdown, slideshow.</li>
+            <li>Validasi form sebelum dikirim ke server.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 onclick="konfirmasiToggle(this)">Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+      <div>
+        <p>CSS ( Cascading Style Sheets) dan Javascript dapat diintegrasikan dalam pemrograman web untuk menambahkan gaya dan interaktivitas pada halaman. HTML, CSS dan Javascript bekerja bersama untuk menciptakan pengalaman web yang dinamis dan menarik.</p>
+        <ul>
+          <li><strong>Inline CSS:</strong><br>
+            <code>&lt;p style="color: blue; font-size: 18px;"&gt;Teks ini berwarna biru&lt;/p&gt;</code>
+          </li>
+          <li><strong>Internal CSS:</strong><br>
+            <code>&lt;style&gt; p { color: blue; } &lt;/style&gt;</code>
+          </li>
+          <li><strong>External CSS:</strong><br>
+            <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+          </li>
+          <li><strong>Inline JS:</strong><br>
+            <code>&lt;button onclick="alert('Halo!')"&gt;Klik Aku&lt;/button&gt;</code>
+          </li>
+          <li><strong>Internal JS:</strong><br>
+            <code>&lt;script&gt; function halo(){ alert("Halo!"); } &lt;/script&gt;</code>
+          </li>
+          <li><strong>External JS:</strong><br>
+            <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 onclick="konfirmasiToggle(this)">Jelaskan apa saja keuntungan menggunakan JavaScript dan CSS?</h3>
+      <div>
+        <ul>
+          <li><strong></strong> JavaScript dan CSS memiliki keuntungan yang berbeda namun saling melengkapi dalam pengembangan web. JavaScript memberikan interaktivitas dan dinamitas pada halaman web, memungkinkan manipulasi konten, validasi formulir , dan bahkan pengembangan aplikasi web kompleks. CSS disisi lain, bertanggung jawab atas terampilan dan presentasi visual, memungkinkan pengembangan untuk mengontrol warna textual style, tata letak, dan animasi meningkat pengalaman pengguna.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 onclick="konfirmasiToggle(this)">Jelaskan apa saja keuntungan menggunakan Bootstrap?</h3>
+      <div>
+        <ul>
+          <li>Bootstrap menawarkan banyak keuntungan dalam pengembangan web, terutama dalam hal kemudahan, kecepatan dan responsivitas.</li>
+          <li>Responsif: otomatis menyesuaikan ukuran layar.</li>
+          <li>Komponen siap pakai: tombol, navbar, modal.</li>
+          <li>Cepat dan efisien: hemat waktu.</li>
+          <li>Kompatibel di semua browser.</li>
+          <li>Dokumentasi lengkap dan komunitas besar.</li>
+          <li>Mudah dikustomisasi dan diintegrasikan dengan jQuery/React.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 onclick="konfirmasiToggle(this)">Contoh penggunaan Bootstrap dan penjelasannya</h3>
+      <div>
+        <p>Contoh kode Bootstrap tombol:</p>
+        <code>&lt;button class="btn btn-primary"&gt;Klik Saya&lt;/button&gt;</code>
+        <p>Penjelasan:</p>
+        <ul>
+          <li><code>btn</code>: class dasar tombol Bootstrap.</li>
+          <li><code>btn-primary</code>: memberi warna biru Bootstrap.</li>
+          <li><code>container</code>, <code>text-center</code>, <code>mt-5</code>: digunakan untuk mengatur layout dan posisi konten agar lebih rapi dan berada di tengah.</li>
+        </ul>
+        <p>Berikut ini adalah screenshot hasil running contoh tersebut di web:</p>
+        <img class="screenshot" src="Screenshot.png" alt="Screenshot Bootstrap Button">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function konfirmasiToggle(h3) {
+      const isi = h3.nextElementSibling;
+      const konfirmasi = confirm("Ingin menyembunyikan bagian ini?");
+      if (konfirmasi) {
+        isi.style.display = (isi.style.display === "none") ? "block" : "none";
+      }
+    }
+
+    function toggleMode() {
+      document.body.classList.toggle("messy");
+    }
+  </script>
+</body>
+</html>
